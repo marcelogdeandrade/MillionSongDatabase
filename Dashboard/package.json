@@ -1,0 +1,37 @@
+{
+  "name": "my-razzle-app",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "razzle start",
+    "build": "razzle build",
+    "test": "razzle test --env=jsdom",
+    "start:prod": "NODE_ENV=production node build/server.js"
+  },
+  "dependencies": {
+    "apisauce": "^0.14.1",
+    "chart.js": "^2.7.1",
+    "cleave.js": "^1.0.1",
+    "express": "^4.15.4",
+    "highcharts": "^6.0.3",
+    "jquery": "^3.2.1",
+    "moment": "^2.18.1",
+    "razzle": "^0.7.6-rc2",
+    "rc-slider": "^8.4.0",
+    "react": "^15.6.2",
+    "react-chartjs": "^0.8.0",
+    "react-chartjs-2": "^2.6.4",
+    "react-d3-map-bubble": "^0.6.0",
+    "react-datepicker": "^0.53.0",
+    "react-dom": "^15.6.1",
+    "react-flexbox-grid": "^2.0.0",
+    "react-grid-layout": "^0.16.0",
+    "react-highcharts": "^15.0.0",
+    "react-router-dom": "^4.2.0",
+    "react-simple-maps": "^0.9.0",
+    "react-world-map": "^1.0.13",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "0.71.4",
+    "underscore": "^1.8.3"
+  }
+}
