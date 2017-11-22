@@ -8,6 +8,8 @@ import { Summary } from './Summary'
 import { WorldMapChart } from './WorldMap'
 import $ from 'jquery'
 
+// JSON GRANDE = https://api.myjson.com/bins/m6pg7
+// JSON PEQUENO = https://api.myjson.com/bins/181akv
 
 class Home extends Component {
   constructor(props){
@@ -28,7 +30,7 @@ class Home extends Component {
 
   readData(){
     const component = this
-    $.getJSON('https://api.myjson.com/bins/181akv', function (data) {
+    $.getJSON('https://api.myjson.com/bins/m6pg7', function (data) {
       component.setState({
         data: data
       })
