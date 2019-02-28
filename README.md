@@ -1,5 +1,7 @@
 # MillionSongDatabase
 
+<img src="https://github.com/marcelogdeandrade/MillionSongDatabase/blob/master/images/dashboard.png" alt="drawing" width="800"/>
+
 ## Leitura de dados e análise
 
 A leitura de dados e as análises feitas usando o Spark podem ser vistas no arquivo `LeituraDeDados.json`. Para visulizar o arquivo, importe-o no Apache Zeppelin com um notebook. Os dados brutos são adquiridos do bucket do AWS S3 `millionsongsample2`, feito anteriormente a partir do sample de 1GB do Million Song Dataset.
