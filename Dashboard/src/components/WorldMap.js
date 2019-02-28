@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import _ from 'underscore'
+import Highcharts from 'highcharts';
 
 export class WorldMapChart extends Component {
 
@@ -15,10 +16,11 @@ export class WorldMapChart extends Component {
     const years = Object.keys(termData)
     let result = []
     years.map(year => {
-      if(year.toString().substr(0,3) == decade)
+      if(year.toString().substr(0,3) === decade)
         if (termData[year]['songs_country']){
           result = result.concat(termData[year]['songs_country'])
         }
+      return year
     })
     let resultSorted = result.sort(function (first, second) {
       var a = first['code'];
@@ -34,7 +36,7 @@ export class WorldMapChart extends Component {
     const endResult = []
     if (resultSorted.length > 1){
       resultSorted = resultSorted.reduce((a, b) => {
-        if (a['code'] == b['code']) {
+        if (a['code'] === b['code']) {
           return {
             code: a['code'],
             z: a['z'] + b['z']

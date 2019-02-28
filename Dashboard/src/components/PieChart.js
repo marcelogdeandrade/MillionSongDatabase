@@ -15,10 +15,11 @@ export class PieChart extends Component {
     const years = Object.keys(termData)
     let result = []
     years.map(year => {
-      if (year.toString().substr(0, 3) == decade)
+      if (year.toString().substr(0, 3) === decade)
         if (termData[year]['subgenero']) {
           result = result.concat(termData[year]['subgenero'])
         }
+      return year
     })
     let resultSorted = result.sort(function (first, second) {
       var a = first[0];
@@ -34,7 +35,7 @@ export class PieChart extends Component {
     let endResult = []
     if (resultSorted.length > 1) {
       resultSorted = resultSorted.reduce((a, b) => {
-        if (a[0] == b[0]) {
+        if (a[0] === b[0]) {
           return [
             a[0],
             (a[1] + b[1])
@@ -61,6 +62,7 @@ export class PieChart extends Component {
     data1.map(data => {
       labels.push(data[0])
       formattedData.push(data[1])
+      return data
     })
     let data = {}
     data.labels = labels

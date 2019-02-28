@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Grid, Image, Segment, Header, Icon, Container } from 'semantic-ui-react'
+import {Grid, Segment, Header } from 'semantic-ui-react'
 import { LineChart } from './LineChart'
 import { BarChart } from './BarChart'
 import { PieChart } from './PieChart'

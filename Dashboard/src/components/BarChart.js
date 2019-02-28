@@ -23,9 +23,10 @@ export class BarChart extends Component {
     Object.keys(termData).map(year => {
       const decade = year.substr(0,3)
       const index = decades.indexOf(decade)
-      if (index != -1){
+      if (index !== -1){
         data[index].push(termData[year]['avg_loudness'])
       }
+      return year
     })
     data = data.map(year => {
       return year.filter(a => {
@@ -48,7 +49,7 @@ export class BarChart extends Component {
     const term1Data = props.data[props.term1]
     const term2Data = props.data[props.term2]
     let data = {}
-    data.labels = ['1960', '1970', '1980', '1990', '2000'],
+    data.labels = ['1960', '1970', '1980', '1990', '2000']
     data.datasets = []
     let dataset1 = {
       label : props.term1,

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Header } from 'semantic-ui-react'
-import Slider, { Range } from 'rc-slider';
+import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 
 const marks = {

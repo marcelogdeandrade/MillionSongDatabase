@@ -16,7 +16,7 @@
     "highcharts": "^6.0.3",
     "jquery": "^3.2.1",
     "moment": "^2.18.1",
-    "razzle": "^0.7.6-rc2",
+    "razzle": "^2.4.1",
     "rc-slider": "^8.4.0",
     "react": "^15.6.2",
     "react-chartjs": "^0.8.0",
