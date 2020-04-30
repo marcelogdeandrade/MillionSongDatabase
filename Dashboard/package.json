@@ -14,7 +14,7 @@
     "cleave.js": "^1.0.1",
     "express": "^4.15.4",
     "highcharts": "^6.0.3",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "moment": "^2.18.1",
     "razzle": "^2.4.1",
     "rc-slider": "^8.4.0",
